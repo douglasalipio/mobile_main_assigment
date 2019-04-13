@@ -58,13 +58,13 @@ function openCage() {
         var country = responseJSON.results[0].components.country;
         var currency = responseJSON.results[0].annotations.currency.name;
         var flag = responseJSON.results[0].annotations.flag;
-        moneyiso = responseJSON.results[0].annotations.currency.iso_code;
+        var moneyIso = responseJSON.results[0].annotations.currency.iso_code;
         
         //console.log("money"+moneyiso);
         // Formattng data to put it on the front end
         var oc = "&nbspCity: " + city + "<br>&nbspCountry: " + country + "<br>&nbspCurrency: " + currency + "<br>&nbspFlag:" + flag;
         document.getElementById('openCage').innerHTML = oc;
         getWeather(lat,lon);
+        getRate(moneyIso)
     }
-
 }

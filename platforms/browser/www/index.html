@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- Required meta tags-->
   <meta charset="utf-8">
@@ -49,12 +49,12 @@
           <!-- Additional "tabbar" class -->
           <div class="toolbar tabbar tabbar-labels toolbar-bottom">
             <div class="toolbar-inner">
-              
+
               <a href="#tab-1" class="tab-link tab-link-active">
                 <i class="icon material-icons md-24">location_on</i>
                 <span class="tabbar-label">Location</span>
               </a>
-               
+
               <a href="#tab-3" class="tab-link ">
                 <i class="icon material-icons md-24">money</i>
                 <span class="tabbar-label">Rates</span>
@@ -77,54 +77,78 @@
             <div class="page-content tab tab-active" id="tab-1">
               <div class="block">
                 <div class="block">
-                <b>&nbsp&nbspLocation</b>
+                  <b>&nbsp&nbspLocation</b>
                   <div class="card card-outline">
-                      <div class="card-content card-content-padding">
-                          <div id="openCage"> Waiting for city data...</div>
-                      </div>
+                    <div class="card-content card-content-padding">
+                      <div id="openCage"> Waiting for city data...</div>
+                    </div>
                   </div>
                 </div>
                 <div class="block">
-                    <b>&nbsp&nbspWeather</b>
-                    <div class="card card-outline">
-                        <div class="card-content card-content-padding">
-                            <div id="getWeather"> Waiting for city data...</div>
-                        </div>
+                  <b>&nbsp&nbspWeather</b>
+                  <div class="card card-outline">
+                    <div class="card-content card-content-padding">
+                      <div id="getWeather"> Waiting for weather...</div>
                     </div>
+                  </div>
+                </div>
+                <div class="block">
+                  <b>&nbsp&nbspCurrency exchange</b>
+                  <div class="card card-outline">
+                    <div class="item-input-wrap">
+                      <div class="item-inner">
+                        <div class="item-input-wrap input-dropdown-wrap">
+                            <input type="number" name="userMoney" placeholder="1">
+                          <select placeholder="Please choose...">
+                            <option value="defaulValue">EURO</option>
+                            <option value="userValue">DOLLAR&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                          </select>
+                        </div>
+                        <div class="item-input-wrap input-dropdown-wrap">
+                            <input type="number" name="defaulMoney" placeholder="1">
+                          <select placeholder="Please choose...">
+                            <option value="defaulValue">DOLLAR</option>
+                            <option value="defaulValue">EURO</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="page-content tab" id="tab-2">
-              <div class="block">
-                <p><b>Tab 2 content</b></p>
-                ...
+              <div class="page-content tab" id="tab-2">
+                <div class="block">
+                  <p><b>Tab 2 content</b></p>
+                  ...
+                </div>
               </div>
-            </div>
-            <div class="page-content tab" id="tab-4">
-              <div class="block">
-                <p><b>Tab 3 content</b></p>
-                ...
+              <div class="page-content tab" id="tab-4">
+                <div class="block">
+                  <p><b>Tab 3 content</b></p>
+                  ...
+                </div>
               </div>
-            </div>
-            <div class="page-content tab" id="tab-5">
-              <div class="block">
-                <p><b>Tab 4 content</b></p>
-                ...
+              <div class="page-content tab" id="tab-5">
+                <div class="block">
+                  <p><b>Tab 4 content</b></p>
+                  ...
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script src="https://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
-  <script src="https://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
-  <script type="text/javascript" src="cordova.js"></script>
-  <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
-  <script type="text/javascript" src="js/my-app.js"></script>
-  <script type="text/javascript" src="js/location.js"></script>
-  <script type="text/javascript" src="js/weather.js"></script>
-  <script type="text/javascript" src="js/rate.js"></script>
+    <script src="https://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/location.js"></script>
+    <script type="text/javascript" src="js/weather.js"></script>
+    <script type="text/javascript" src="js/rate.js"></script>
+    <script type="text/javascript" src="js/money.js"></script>
 </body>
 
 </html>

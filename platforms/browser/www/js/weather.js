@@ -30,7 +30,6 @@ function getWeather(lat, lon) {
         <br>&nbspWind speed: ${wind} Km/h
         <br>&nbspHumidity: ${humidity}%
         <br>&nbspTemperature: ${fToCel}C`;
-        
         document.getElementById('getWeather').innerHTML = oc;
     }
 }
