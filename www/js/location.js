@@ -62,11 +62,7 @@ function openCage() {
         
         //console.log("money"+moneyiso);
         // Formattng data to put it on the front end
-        var oc = "City: " + city + "<br>Country: " + country + "<br>Currency: " + currency + "<br>Flag:" + flag;
-        // var moneyiso = responseJSON.results[0].annotations.currency.iso_code;
-        // var moneyiso = responseJSON.results[0].annotations.currency.iso_code;
-        //console.log("opa - "+ moneyiso)
-        // Placing formatted data on the front ed
+        var oc = "&nbspCity: " + city + "<br>&nbspCountry: " + country + "<br>&nbspCurrency: " + currency + "<br>&nbspFlag:" + flag;
         document.getElementById('openCage').innerHTML = oc;
         console.log("teste do lat"+lat);
         console.log("longitude e "+lon);

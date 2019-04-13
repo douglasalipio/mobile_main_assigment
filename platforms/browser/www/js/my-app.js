@@ -1,5 +1,4 @@
 
-
 // Initialize app
 var myApp = new Framework7();
 
@@ -17,6 +16,7 @@ var mainView = myApp.addView('.view-main', {
 $$(document).on('deviceready', function () {
     console.log("Device is ready!");
     getLocation();
+    //getWeather();
 });
 
 
