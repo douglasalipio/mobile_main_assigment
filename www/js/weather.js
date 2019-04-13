@@ -1,11 +1,10 @@
 
 var fToCel;
 
-function getWeather() {
-
+function getWeather(lat, lon) {
     var http = new XMLHttpRequest();
     //const url = 'http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=043f638d6a190b88cc6cf7812ba727ee';
-    const url = 'https://api.darksky.net/forecast/e5f553b2c2d739a95b1d2783040893c1/37.8267,-122.4233';
+    const url = 'https://api.darksky.net/forecast/e5f553b2c2d739a95b1d2783040893c1/' + lat + ',' + lon + '';
     //const url = 'https://api.darksky.net/forecast/e5f553b2c2d739a95b1d2783040893c1/'+lat+,lon;
     http.open("GET", url);
     // Sending the request
@@ -22,21 +21,24 @@ function getWeather() {
         // As we know that answer is a JSON object,
         // we can parse it and handle it as such
         var responseJSON = JSON.parse(response);
-
-        // Printing the result JSON to the console
-        //console.log(responseJSON.currently.temperature);
-        
-        //fahrenheitToCelsius(responseJSON.currently.temperature);
-        // var tempcelsius = fahrenheitToCelsius(responseJSON.currently.temperature).toFixed(2);
         var summary = responseJSON.currently.summary;
-        console.log("Summary - "+summary);
-        // var cloud = responseJSON.currently.cloudCover * 100;
-        // console.log("Percentual of cloud:" + cloud);
-        // //var percenthumidit = responseJson.currently.humidity;
-        // //console.log(percenthumidit);
-        // var oc2 = "Temperature: " + tempcelsius + " °C" + "<br>wind velocity: " + wind + " Km/h" + "<br>Cloud: " + cloud + "%";
-
-        // // Placing formatted data on the front ed
-        // document.getElementById('getWeather').innerHTML = oc2;
+        var wind = responseJSON.currently.windSpeed;
+        var humidity = responseJSON.currently.humidity;
+        var temperature = responseJSON.currently.temperature;
+        fToCel = fahrenheitToCelsius(temperature)
+        var oc =  `&nbspSummary: ${summary}
+        <br>&nbspWind speed: ${wind} Km/h
+        <br>&nbspHumidity: ${humidity}%
+        <br>&nbspTemperature: ${fToCel}C`;
+        
+        document.getElementById('getWeather').innerHTML = oc;
     }
+}
+
+function fahrenheitToCelsius(fahrenheit) {
+    var fTemp = fahrenheit;
+    fToCel = (fTemp - 32) * 5 / 9;
+    var message = fTemp + '\xB0F an in Celsius is: ' + fToCel + '\xB0 C.';
+    console.log("temperature in Celsius:"+fToCel);
+    return Number(fToCel).toFixed(2); ;
 }

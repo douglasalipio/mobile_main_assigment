@@ -64,9 +64,7 @@ function openCage() {
         // Formattng data to put it on the front end
         var oc = "&nbspCity: " + city + "<br>&nbspCountry: " + country + "<br>&nbspCurrency: " + currency + "<br>&nbspFlag:" + flag;
         document.getElementById('openCage').innerHTML = oc;
-        console.log("teste do lat"+lat);
-        console.log("longitude e "+lon);
-        getRate();
+        getWeather(lat,lon);
     }
 
 }

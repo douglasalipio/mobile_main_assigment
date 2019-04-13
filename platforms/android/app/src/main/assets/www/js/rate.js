@@ -40,7 +40,7 @@ function getRate(){
         var oc3 = "Your Currency money is: "+moneyiso;
 
         // Placing formatted data on the front ed
-        document.getElementById('getWeather').innerHTML=oc3;
+        //document.getElementById('getWeather').innerHTML=oc3;
         
     }
 }

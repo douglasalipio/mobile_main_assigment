@@ -16,7 +16,6 @@ var mainView = myApp.addView('.view-main', {
 $$(document).on('deviceready', function () {
     console.log("Device is ready!");
     getLocation();
-    //getWeather();
 });
 
 
