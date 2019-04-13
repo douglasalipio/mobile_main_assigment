@@ -12,7 +12,7 @@ var mainView = myApp.addView('.view-main', {
 });
 
 // Handle Cordova Device Ready Event
-$$(document).on('deviceready', function() {
+$$(document).on('deviceready', function () {
     console.log("Device is ready!");
 });
 
@@ -41,3 +41,31 @@ $$(document).on('pageInit', '.page[data-page="about"]', function (e) {
     // Following code will be executed for page with data-page attribute equal to "about"
     myApp.alert('Here comes About page');
 })
+
+//########-GEOLOCATION-#########
+function geoLocation(){
+    navigator.geolocation.getCurrentPosition(onSuccess, onError)
+}
+
+// onSuccess Callback
+//   This method accepts a `Position` object, which contains
+//   the current GPS coordinates
+function onSuccess(position) {
+    var element = document.getElementById('geolocation');
+    element.innerHTML = 'Latitude: ' + position.coords.latitude + '<br />' +
+        'Longitude: ' + position.coords.longitude + '<br />' +
+        '<hr />' + element.innerHTML;
+    console.log("opa"+position.coords.latitude);
+}
+
+// onError Callback receives a PositionError object
+function onError(error) {
+    alert('code: ' + error.code + '\n' +
+        'message: ' + error.message + '\n');
+}
+
+// Options: throw an error if no update is received every 30 seconds.
+var watchID = navigator.geolocation.watchPosition(onSuccess, onError, { timeout: 30000 });
+
+//########-GEOLOCATION-#########
+

@@ -1,0 +1,25 @@
+{
+  "name": "com.cct.douglas",
+  "version": "1.0.0",
+  "displayName": "main-assigment-douglas",
+  "cordova": {
+    "platforms": [
+      "android",
+      "browser"
+    ],
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-console": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-geolocation": {}
+    }
+  },
+  "dependencies": {
+    "cordova-android": "~7.1.4",
+    "cordova-browser": "^5.0.4",
+    "cordova-plugin-console": "~1.0.1",
+    "cordova-plugin-geolocation": "^4.0.1",
+    "cordova-plugin-statusbar": "~1.0.1",
+    "cordova-plugin-whitelist": "~1.2.0"
+  }
+}
