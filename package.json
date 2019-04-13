@@ -4,8 +4,8 @@
   "displayName": "main-assigment-douglas",
   "cordova": {
     "platforms": [
-      "android",
-      "browser"
+      "browser",
+      "android"
     ],
     "plugins": {
       "cordova-plugin-whitelist": {},
@@ -15,7 +15,7 @@
     }
   },
   "dependencies": {
-    "cordova-android": "~7.1.4",
+    "cordova-android": "^8.0.0",
     "cordova-browser": "^5.0.4",
     "cordova-plugin-console": "~1.0.1",
     "cordova-plugin-geolocation": "^4.0.1",

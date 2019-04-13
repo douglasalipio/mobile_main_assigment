@@ -5,24 +5,6 @@
     },
     "config_munge": {
         "files": {
-            "res/xml/config.xml": {
-                "parents": {
-                    "/*": [
-                        {
-                            "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
-                            "count": 1
-                        },
-                        {
-                            "xml": "<feature name=\"Geolocation\"><param name=\"android-package\" value=\"org.apache.cordova.geolocation.Geolocation\" /></feature>",
-                            "count": 1
-                        }
-                    ]
-                }
-            },
             "AndroidManifest.xml": {
                 "parents": {
                     "/*": [
@@ -40,6 +22,24 @@
                         }
                     ]
                 }
+            },
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Geolocation\"><param name=\"android-package\" value=\"org.apache.cordova.geolocation.Geolocation\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
             }
         }
     },
@@ -47,26 +47,18 @@
         "cordova-plugin-console": {
             "PACKAGE_NAME": "com.cct.douglas"
         },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.cct.douglas"
+        },
         "cordova-plugin-statusbar": {
             "PACKAGE_NAME": "com.cct.douglas"
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.cct.douglas"
-        },
-        "cordova-plugin-geolocation": {
-            "PACKAGE_NAME": "com.cct.douglas"
         }
     },
     "dependent_plugins": {},
     "modules": [
-        {
-            "id": "cordova-plugin-statusbar.statusbar",
-            "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
-            "pluginId": "cordova-plugin-statusbar",
-            "clobbers": [
-                "window.StatusBar"
-            ]
-        },
         {
             "id": "cordova-plugin-geolocation.geolocation",
             "file": "plugins/cordova-plugin-geolocation/www/android/geolocation.js",
@@ -80,12 +72,20 @@
             "file": "plugins/cordova-plugin-geolocation/www/PositionError.js",
             "pluginId": "cordova-plugin-geolocation",
             "runs": true
+        },
+        {
+            "id": "cordova-plugin-statusbar.statusbar",
+            "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+            "pluginId": "cordova-plugin-statusbar",
+            "clobbers": [
+                "window.StatusBar"
+            ]
         }
     ],
     "plugin_metadata": {
         "cordova-plugin-console": "1.0.7",
+        "cordova-plugin-geolocation": "4.0.1",
         "cordova-plugin-statusbar": "1.0.1",
-        "cordova-plugin-whitelist": "1.2.2",
-        "cordova-plugin-geolocation": "4.0.1"
+        "cordova-plugin-whitelist": "1.2.2"
     }
 }

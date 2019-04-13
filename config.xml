@@ -29,6 +29,5 @@
     <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
     <plugin name="cordova-plugin-console" spec="~1.0.1" />
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
-    <engine name="android" spec="~7.1.4" />
     <engine name="browser" spec="^5.0.4" />
 </widget>
