@@ -55,11 +55,6 @@
                 <span class="tabbar-label">Location</span>
               </a>
                
-              <a href="#tab-2" class="tab-link ">
-                <i class="icon material-icons md-24">wb_sunny</i>
-                <span class="tabbar-label">Weather</span>
-              </a>
-
               <a href="#tab-3" class="tab-link ">
                 <i class="icon material-icons md-24">money</i>
                 <span class="tabbar-label">Rates</span>
@@ -82,41 +77,26 @@
             <div class="page-content tab tab-active" id="tab-1">
               <div class="block">
                 <div class="block">
-                  <!-- custom backdrop element -->
-                  <div class="card-backdrop custom-backdrop"></div>
-                  <!-- pass its CSS selector in data-backdrop-el attribute -->
-                  <div class="card card-expandable" data-backdrop-el=".custom-backdrop">
-                    <button onclick="geoLocation()">Location</button> <br>
-                  </div>
+                  <div id="openCage"> Waiting for city data...</div>
                 </div>
 
               </div>
             </div>
-            <!-- Second tab -->
             <div class="page-content tab" id="tab-2">
               <div class="block">
                 <p><b>Tab 2 content</b></p>
                 ...
               </div>
             </div>
-            <!-- Third tab -->
-            <div class="page-content tab" id="tab-3">
+            <div class="page-content tab" id="tab-4">
               <div class="block">
                 <p><b>Tab 3 content</b></p>
                 ...
               </div>
             </div>
-            <!-- Third tab -->
-            <div class="page-content tab" id="tab-4">
-              <div class="block">
-                <p><b>Tab 4 content</b></p>
-                ...
-              </div>
-            </div>
-            <!-- Third tab -->
             <div class="page-content tab" id="tab-5">
               <div class="block">
-                <p><b>Tab 5 content</b></p>
+                <p><b>Tab 4 content</b></p>
                 ...
               </div>
             </div>
