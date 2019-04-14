@@ -97,15 +97,17 @@
                   <div class="card card-outline">
                     <div class="item-input-wrap">
                       <div class="item-inner">
+                        
                         <div class="item-input-wrap input-dropdown-wrap">
-                          <div id="dynamicMoneyLabel" class="item-title item-label">Name</div>
-                          <input type="number" name="userMoney" placeholder="1">
+                          <div id="dynamicMoneyLabel" class="item-title item-label"></div>
+                          <input id="dynamicMoneyValue" type="number" oninput="covertDynamicMoneyToUsd()" placeholder="Set money">
                         </div>
 
                         <div class="item-input-wrap input-dropdown-wrap">
-                          <div class="item-title item-label">USD</div>
-                          <input type="number" name="defaulMoney" placeholder="1">
+                          <div class="item-title item-label" class="item-title item-label">USD</div>
+                          <input id="defaultMoneyValue" type="text" oninput="covertUsdToDynamicMoney()" placeholder ="Set money">
                         </div>
+
                       </div>
                     </div>
                   </div>

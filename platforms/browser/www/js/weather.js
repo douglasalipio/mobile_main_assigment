@@ -37,7 +37,5 @@ function getWeather(lat, lon) {
 function fahrenheitToCelsius(fahrenheit) {
     var fTemp = fahrenheit;
     fToCel = (fTemp - 32) * 5 / 9;
-    var message = fTemp + '\xB0F an in Celsius is: ' + fToCel + '\xB0 C.';
-    console.log("temperature in Celsius:"+fToCel);
-    return Number(fToCel).toFixed(2); ;
+    return Number(fToCel).toFixed(2);
 }

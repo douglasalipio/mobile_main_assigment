@@ -1,6 +1,6 @@
 var defaultMoney = "USD"
 var layerAPIKey = "ee5368d2967dffe44b5a"
-
+var rate;
 function getRate(moneyIso) {
     // The XMLHttpRequest object, is the one in 
     // charge of handleing the request for us
@@ -23,6 +23,19 @@ function getRate(moneyIso) {
         // we can parse it and handle it as such
         var responseJSON = JSON.parse(response);
         rate = responseJSON[`USD_${moneyIso}`];
-        document.getElementById('dynamicMoneyLabel').innerHTML = moneyIso
+        document.getElementById('dynamicMoneyLabel').innerHTML = moneyIso;
     }
 }
+
+function covertDynamicMoneyToUsd(){
+    var input = document.getElementById('dynamicMoneyValue').value;
+    var result = input * rate;
+    document.getElementById('defaultMoneyValue').value = Number(result).toFixed(2);
+}
+
+function covertUsdToDynamicMoney(){
+    var input = document.getElementById('defaultMoneyValue').value;
+    var result = input * rate;
+    document.getElementById('dynamicMoneyValue').value = Number(result).toFixed(2);
+}
+
