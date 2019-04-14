@@ -34,8 +34,11 @@ function covertDynamicMoneyToUsd(){
 }
 
 function covertUsdToDynamicMoney(){
+    console.log("rate value - "+ rate); 
     var input = document.getElementById('defaultMoneyValue').value;
     var result = input * rate;
+    console.log("input value - "+ input);
+    console.log("result - "+ result);
     document.getElementById('dynamicMoneyValue').value = Number(result).toFixed(2);
 }
 

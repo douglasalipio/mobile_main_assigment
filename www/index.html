@@ -55,17 +55,17 @@
                 <span class="tabbar-label">Location</span>
               </a>
 
-              <a href="#tab-3" class="tab-link ">
+              <a href="#tab-2" class="tab-link ">
                 <i class="icon material-icons md-24">location_off</i>
                 <span class="tabbar-label">Recencly</span>
               </a>
 
-              <a href="#tab-4" class="tab-link ">
+              <a href="#tab-3" class="tab-link ">
                 <i class="icon material-icons md-24">photo_camera</i>
                 <span class="tabbar-label">Camera</span>
               </a>
 
-              <a href="#tab-5" class="tab-link ">
+              <a href="#tab-4" class="tab-link ">
                 <i class="icon material-icons md-24">photo_library</i>
                 <span class="tabbar-label">Gallery</span>
               </a>
@@ -93,61 +93,62 @@
                   </div>
                 </div>
                 <div class="block">
-                  <b>&nbsp&nbspCurrency exchange</b>
-                  <div class="card card-outline">
-                    <div class="item-input-wrap">
-                      <div class="item-inner">
-
-                        <div class="item-input-wrap input-dropdown-wrap">
-                          <div id="dynamicMoneyLabel" class="item-title item-label"></div>
-                          <input id="dynamicMoneyValue" type="number" oninput="covertDynamicMoneyToUsd()"
-                            placeholder="Set money">
+                    <b>&nbsp&nbspCurrency exchange</b>
+                    <div class="card card-outline">
+                      <div class="item-input-wrap">
+                        <div class="item-inner">
+  
+                          <div class="item-input-wrap input-dropdown-wrap">
+                            <div id="dynamicMoneyLabel" class="item-title item-label"></div>
+                            <input id="dynamicMoneyValue" type="number" oninput="covertDynamicMoneyToUsd()"
+                              placeholder="Set money">
+                          </div>
+  
+                          <div class="item-input-wrap input-dropdown-wrap">
+                            <div class="item-title item-label" class="item-title item-label">USD</div>
+                            <input id="defaultMoneyValue" type="text" oninput="covertUsdToDynamicMoney()"
+                              placeholder="Set money">
+                          </div>
+  
                         </div>
-
-                        <div class="item-input-wrap input-dropdown-wrap">
-                          <div class="item-title item-label" class="item-title item-label">USD</div>
-                          <input id="defaultMoneyValue" type="text" oninput="covertUsdToDynamicMoney()"
-                            placeholder="Set money">
-                        </div>
-
                       </div>
                     </div>
                   </div>
-                </div>
               </div>
-              <div class="page-content tab" id="tab-2">
-                <div class="block">
-                  <p><b>Tab 2 content</b></p>
-                  ...
-                </div>
+            </div>
+            <div class="page-content tab" id="tab-2">
+              <div class="block">
+                <p><b>Tab 2 content</b></p>
+                ...
               </div>
-              <div class="page-content tab" id="tab-4">
-                <div class="block">
-                  <p><b>Tab 3 content</b></p>
-                  ...
-                </div>
+            </div>
+            <div class="page-content tab" id="tab-3">
+              <div class="block">
+                <p><b>Tab 3 content</b></p>
+                ...
               </div>
-              <div class="page-content tab" id="tab-5">
-                <div class="block">
-                  <p><b>Tab 4 content</b></p>
-                  ...
-                </div>
+            </div>
+            <div class="page-content tab" id="tab-4">
+              <div class="block">
+                <p><b>Tab 4 content</b></p>
+                ...
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="https://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
-    <script type="text/javascript" src="js/my-app.js"></script>
-    <script type="text/javascript" src="js/location.js"></script>
-    <script type="text/javascript" src="js/weather.js"></script>
-    <script type="text/javascript" src="js/rate.js"></script>
-    <script type="text/javascript" src="js/money.js"></script>
+  <script src="https://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+  <script type="text/javascript" src="js/my-app.js"></script>
+  <script type="text/javascript" src="js/location.js"></script>
+  <script type="text/javascript" src="js/weather.js"></script>
+  <script type="text/javascript" src="js/rate.js"></script>
+  <script type="text/javascript" src="js/money.js"></script>
 </body>
 
 </html>
