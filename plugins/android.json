@@ -18,6 +18,12 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.cct.douglas"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.cct.douglas"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "com.cct.douglas"
     }
   },
   "dependent_plugins": {}

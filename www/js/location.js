@@ -1,6 +1,7 @@
 
 var lat;
 var lon;
+const LOCATION_KEY = "extra_location_key";
 
 function getLocation() {
     navigator.geolocation.getCurrentPosition(geoCallback, onLocationError);
@@ -46,9 +47,6 @@ function openCage() {
         // we can parse it and handle it as such
         var responseJSON = JSON.parse(response);
 
-        // Printing the result JSON to the console
-        console.log(responseJSON);
-
         // Extracting the individual values, just as we
         // do with any JSON object. Just as we did 
         // with the position.
@@ -66,5 +64,14 @@ function openCage() {
         document.getElementById('openCage').innerHTML = oc;
         getWeather(lat,lon);
         getRate(moneyIso)
+        saveLocate(city)
     }
+}
+
+function saveLocateLocalSystem(value){
+    localStorage.setItem(LOCATION_KEY,value);
+}
+
+function getLocateLocalSystem(value){
+    return localStorage.getItem(LOCATION_KEY)
 }

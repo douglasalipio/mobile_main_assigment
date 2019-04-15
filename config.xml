@@ -22,6 +22,8 @@
         <preference name="android.permisssion.ACCESS_FINE_LOCATION" value="none"/>
         <preference name="android.permisssion.ACCESS_COARSE_LOCATION" value="none"/>
         <preference name="android.permisssion.INTERNET" value="none"/>
+        <preference name="android.permission.WRITE_EXTERNAL_STORAGE" value="none"/>
+        <preference name="AndroidPersistentFileLocation" value="Compatibility" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
@@ -32,5 +34,7 @@
     <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
     <plugin name="cordova-plugin-console" spec="~1.0.1" />
     <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
+    <plugin name="File" value="org.apache.cordova.FileUtils" />
+    <plugin name="FileTransfer" value="org.apache.cordova.FileTransfer" />
     <engine name="browser" spec="^5.0.4" />
 </widget>

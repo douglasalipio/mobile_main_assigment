@@ -3,9 +3,7 @@ var fToCel;
 
 function getWeather(lat, lon) {
     var http = new XMLHttpRequest();
-    //const url = 'http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=043f638d6a190b88cc6cf7812ba727ee';
     const url = 'https://api.darksky.net/forecast/e5f553b2c2d739a95b1d2783040893c1/' + lat + ',' + lon + '';
-    //const url = 'https://api.darksky.net/forecast/e5f553b2c2d739a95b1d2783040893c1/'+lat+,lon;
     http.open("GET", url);
     // Sending the request
     http.send();

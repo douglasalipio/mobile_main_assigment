@@ -77,78 +77,77 @@
             <div class="page-content tab tab-active" id="tab-1">
               <div class="block">
                 <div class="block">
-                  <b>&nbsp&nbspLocation</b>
+
                   <div class="card card-outline">
-                    <div class="card-content card-content-padding">
-                      <div id="openCage"> Waiting for city data...</div>
-                    </div>
+                    <div class="card-header">Location</div>
+                    <div class="card-content card-header" id="openCage"> Waiting for city data...</div>
+                    <div class="card-footer">Save Location</div>
                   </div>
+
                 </div>
                 <div class="block">
-                  <b>&nbsp&nbspWeather</b>
                   <div class="card card-outline">
-                    <div class="card-content card-content-padding">
+                    <div class="card-header">Weather</div>
+                    <div class="card-content card-header">
                       <div id="getWeather"> Waiting for weather...</div>
                     </div>
                   </div>
-                </div>
-                <div class="block">
-                    <b>&nbsp&nbspCurrency exchange</b>
+                  <div class="block">
+                    
                     <div class="card card-outline">
+                      <div class="card-content card-header">Currency exchange</div>
                       <div class="item-input-wrap">
-                        <div class="item-inner">
-  
+                        <div class="item-inner card-header">
                           <div class="item-input-wrap input-dropdown-wrap">
                             <div id="dynamicMoneyLabel" class="item-title item-label"></div>
                             <input id="dynamicMoneyValue" type="number" oninput="covertDynamicMoneyToUsd()"
                               placeholder="Set money">
                           </div>
-  
+
                           <div class="item-input-wrap input-dropdown-wrap">
                             <div class="item-title item-label" class="item-title item-label">USD</div>
                             <input id="defaultMoneyValue" type="text" oninput="covertUsdToDynamicMoney()"
                               placeholder="Set money">
                           </div>
-  
                         </div>
                       </div>
                     </div>
                   </div>
-              </div>
-            </div>
-            <div class="page-content tab" id="tab-2">
-              <div class="block">
-                <p><b>Tab 2 content</b></p>
-                ...
-              </div>
-            </div>
-            <div class="page-content tab" id="tab-3">
-              <div class="block">
-                <p><b>Tab 3 content</b></p>
-                ...
-              </div>
-            </div>
-            <div class="page-content tab" id="tab-4">
-              <div class="block">
-                <p><b>Tab 4 content</b></p>
-                ...
+                </div>
+                <div class="page-content tab" id="tab-2">
+                  <div class="block">
+                    <p><b>Tab 2 content</b></p>
+                    ...
+                  </div>
+                </div>
+                <div class="page-content tab" id="tab-3">
+                  <div class="block">
+                    <p><b>Tab 3 content</b></p>
+                    ...
+                  </div>
+                </div>
+                <div class="page-content tab" id="tab-4">
+                  <div class="block">
+                    <p><b>Tab 4 content</b></p>
+                    ...
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <script src="https://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
-  <script src="https://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
-  <script type="text/javascript" src="cordova.js"></script>
-  <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
-  <script type="text/javascript" src="js/my-app.js"></script>
-  <script type="text/javascript" src="js/location.js"></script>
-  <script type="text/javascript" src="js/weather.js"></script>
-  <script type="text/javascript" src="js/rate.js"></script>
-  <script type="text/javascript" src="js/money.js"></script>
+      <script src="https://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+      <script src="https://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+      <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+      <script type="text/javascript" src="js/my-app.js"></script>
+      <script type="text/javascript" src="js/location.js"></script>
+      <script type="text/javascript" src="js/weather.js"></script>
+      <script type="text/javascript" src="js/rate.js"></script>
+      <script type="text/javascript" src="js/money.js"></script>
+      <script type="text/javascript" src="js/recently.js"></script>
 </body>
 
 </html>

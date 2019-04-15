@@ -11,6 +11,14 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <feature name="SQLitePlugin">
+        <param name="android-package" value="io.sqlc.SQLitePlugin" />
+    </feature>
     <name>main-assigment-douglas</name>
     <description>
         A basic Framework7 template for PhoneGap.
@@ -34,4 +42,6 @@
     <preference name="android.permisssion.ACCESS_FINE_LOCATION" value="none" />
     <preference name="android.permisssion.ACCESS_COARSE_LOCATION" value="none" />
     <preference name="android.permisssion.INTERNET" value="none" />
+    <preference name="android.permission.WRITE_EXTERNAL_STORAGE" value="none" />
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
 </widget>

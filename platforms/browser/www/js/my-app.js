@@ -16,8 +16,17 @@ var mainView = myApp.addView('.view-main', {
 $$(document).on('deviceready', function () {
     console.log("Device is ready!");
     getLocation();
+    createDatabase();
+    storeLocation();
+    loadStoreLocation("Dublin","Ireland");
 });
 
+function gotFS(fileSystem) {
+    fileSystem.root.getFile("readme.txt", null, gotFileEntry, fail);
+}
+function fail(evt) {
+    console.log(evt.target.error.code);
+}
 
 // Now we need to run the code that will be executed only for About page.
 
