@@ -20,9 +20,9 @@
         http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
      -->
 
-  <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css">
+  <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css"> 
   <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css">
-
+  <link type="text/html" rel="stylesheet" href="www/css/toast.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -77,13 +77,13 @@
             <div class="page-content tab tab-active" id="tab-1">
               <div class="block">
                 <div class="block">
-
                   <div class="card card-outline">
                     <div class="card-header">Location</div>
                     <div class="card-content card-header" id="openCage"> Waiting for city data...</div>
-                    <div class="card-footer">Save Location</div>
+                    <div class="card-footer">
+                        <button onclick="onSaveLocation()">Save Location</button>
+                    </div>
                   </div>
-
                 </div>
                 <div class="block">
                   <div class="card card-outline">
@@ -93,7 +93,6 @@
                     </div>
                   </div>
                   <div class="block">
-                    
                     <div class="card card-outline">
                       <div class="card-content card-header">Currency exchange</div>
                       <div class="item-input-wrap">
@@ -103,51 +102,54 @@
                             <input id="dynamicMoneyValue" type="number" oninput="covertDynamicMoneyToUsd()"
                               placeholder="Set money">
                           </div>
-
-                          <div class="item-input-wrap input-dropdown-wrap">
-                            <div class="item-title item-label" class="item-title item-label">USD</div>
-                            <input id="defaultMoneyValue" type="text" oninput="covertUsdToDynamicMoney()"
-                              placeholder="Set money">
-                          </div>
+                          <div class="item-input-wrap input-dropdown-wrap"></div>
+                          <div class="item-title item-label" class="item-title item-label">USD</div>
+                          <input id="defaultMoneyValue" type="text" oninput="covertUsdToDynamicMoney()"
+                            placeholder="Set money">
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="page-content tab" id="tab-2">
-                  <div class="block">
-                    <p><b>Tab 2 content</b></p>
-                    ...
-                  </div>
-                </div>
-                <div class="page-content tab" id="tab-3">
-                  <div class="block">
-                    <p><b>Tab 3 content</b></p>
-                    ...
-                  </div>
-                </div>
-                <div class="page-content tab" id="tab-4">
-                  <div class="block">
-                    <p><b>Tab 4 content</b></p>
-                    ...
-                  </div>
-                </div>
+                </div> 
+              </div>
+            </div>
+            <div class="page-content tab" id="tab-2">
+              <div class="block">
+                <p><b>Tab 2 content</b></p>
+                ...
+              </div>
+            </div>
+            <div class="page-content tab" id="tab-3">
+              <div class="block">
+                <p><b>Tab 3 content</b></p>
+                ...
+              </div>
+            </div>
+            <div class="page-content tab" id="tab-4">
+              <div class="block">
+                <p><b>Tab 4 content</b></p>
+                <button onclick="window.plugins.toast.show('Hello there!', 'long', 'center', function(a){console.log('toast success: ' + a)}, function(b){alert('toast error: ' + b)})">Toast show long center</button>
+
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-      <script src="https://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
-      <script src="https://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
-      <script type="text/javascript" src="cordova.js"></script>
-      <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
-      <script type="text/javascript" src="js/my-app.js"></script>
-      <script type="text/javascript" src="js/location.js"></script>
-      <script type="text/javascript" src="js/weather.js"></script>
-      <script type="text/javascript" src="js/rate.js"></script>
-      <script type="text/javascript" src="js/money.js"></script>
-      <script type="text/javascript" src="js/recently.js"></script>
+  <script src="https://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+  <script type="text/javascript" src="js/my-app.js"></script>
+  <script type="text/javascript" src="js/location.js"></script>
+  <script type="text/javascript" src="js/weather.js"></script>
+  <script type="text/javascript" src="js/rate.js"></script>
+  <script type="text/javascript" src="js/money.js"></script>
+  <script type="text/javascript" src="js/recently.js"></script>
+  <script type="text/javascript" src="js/toast.js"></script>
+
 </body>
 
 </html>

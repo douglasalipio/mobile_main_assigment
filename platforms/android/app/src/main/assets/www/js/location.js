@@ -75,3 +75,7 @@ function saveLocateLocalSystem(value){
 function getLocateLocalSystem(value){
     return localStorage.getItem(LOCATION_KEY)
 }
+
+function onSaveLocation() {
+    alert('You selected button ');
+}

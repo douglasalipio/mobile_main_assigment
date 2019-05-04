@@ -23,6 +23,7 @@ function getRate(moneyIso) {
         // we can parse it and handle it as such
         var responseJSON = JSON.parse(response);
         rate = responseJSON[`USD_${moneyIso}`];
+        
         document.getElementById('dynamicMoneyLabel').innerHTML = moneyIso;
     }
 }

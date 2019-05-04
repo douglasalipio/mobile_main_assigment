@@ -1,0 +1,38 @@
+<div class="page-content tab tab-active" id="tab-1">
+    <div class="block">
+        <div class="block">
+            <div class="card card-outline">
+                <div class="card-header">Location</div>
+                <div class="card-content card-header" id="openCage"> Waiting for city data...</div>
+                <div class="card-footer"><a href="#" class="link"></a><a href="#" class="link">Save
+                        location</a></div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="card card-outline">
+                <div class="card-header">Weather</div>
+                <div class="card-content card-header">
+                    <div id="getWeather"> Waiting for weather...</div>
+                </div>
+            </div>
+            <div class="block">
+                <div class="card card-outline">
+                    <div class="card-content card-header">Currency exchange</div>
+                    <div class="item-input-wrap">
+                        <div class="item-inner card-header">
+                            <div class="item-input-wrap input-dropdown-wrap">
+                                <div id="dynamicMoneyLabel" class="item-title item-label"></div>
+                                <input id="dynamicMoneyValue" type="number" oninput="covertDynamicMoneyToUsd()"
+                                    placeholder="Set money">
+                            </div>
+                            <div class="item-input-wrap input-dropdown-wrap"></div>
+                            <div class="item-title item-label" class="item-title item-label">USD</div>
+                            <input id="defaultMoneyValue" type="text" oninput="covertUsdToDynamicMoney()"
+                                placeholder="Set money">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
