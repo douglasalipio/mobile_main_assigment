@@ -17,8 +17,7 @@ $$(document).on('deviceready', function () {
     console.log("Device is ready!");
     getLocation();
     createDatabase();
-    storeLocation();
-    loadStoreLocation("Dublin", "Ireland");
+    loadStoreLocation();   
 });
 
 function gotFS(fileSystem) {

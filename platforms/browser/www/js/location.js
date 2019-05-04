@@ -17,6 +17,8 @@ function geoCallback(position) {
     openCage();
 }
 
+var city = "";
+var country = "";
 
 function openCage() {
 
@@ -52,8 +54,8 @@ function openCage() {
         // with the position.
         // REMEMBER: In this case, we have an array inside 
         // the JSON object.
-        var city = responseJSON.results[0].components.city;
-        var country = responseJSON.results[0].components.country;
+        city = responseJSON.results[0].components.city;
+        country = responseJSON.results[0].components.country;
         var currency = responseJSON.results[0].annotations.currency.name;
         var flag = responseJSON.results[0].annotations.flag;
         var moneyIso = responseJSON.results[0].annotations.currency.iso_code;
@@ -77,5 +79,6 @@ function getLocateLocalSystem(value){
 }
 
 function onSaveLocation() {
-    alert('You selected button ');
+    alert('Location save successfuly' +country);
+    storeLocation(city,country);
 }

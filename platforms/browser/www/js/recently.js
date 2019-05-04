@@ -37,12 +37,14 @@ function storeLocation(city, country){
 }
 
 function loadStoreLocation(){
+    console.log("hello location");
     db.transaction(function (tx) {
         var query = "SELECT * FROM Location";
         tx.executeSql(query, [], function (tx, resultSet) {
             for(var x = 0; x < resultSet.rows.length; x++) {
-                console.log("City: " + resultSet.rows.item(x).city +
-                    ", Country: " + resultSet.rows.item(x).country);
+                //console.log("City: esse" + resultSet.rows.item(x).city +", Country: esse" + resultSet.rows.item(x).country);
+                var oc = "&nbspCity: " + resultSet.rows.item(x).city + "<br>&nbspCountry: " + resultSet.rows.item(x).country;
+                document.getElementById('loadStoreLocation').innerHTML = oc;
             }
         },
         function (tx, error) {
