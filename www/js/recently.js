@@ -34,6 +34,7 @@ function storeLocation(city, country){
     }, function() {
         console.log('transaction ok');
     });
+    saveLocateLocalSystem(city,country);
 }
 
 function loadStoreLocation(){

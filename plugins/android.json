@@ -27,6 +27,14 @@
     },
     "cordova-plugin-dialogs": {
       "PACKAGE_NAME": "com.cct.douglas"
+    },
+    "cordova-plugin-googlemaps": {
+      "PLAY_SERVICES_VERSION": "15.0.1",
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "com.cct.douglas"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.cct.douglas"
     }
   },
   "dependent_plugins": {}

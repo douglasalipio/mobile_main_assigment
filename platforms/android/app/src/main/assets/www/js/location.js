@@ -1,7 +1,8 @@
 
 var lat;
 var lon;
-const LOCATION_KEY = "extra_location_key";
+const LOCATION_CITY_KEY = "extra_location_city_key";
+const LOCATION_COUNTRY_KEY = "extra_location_country_key";
 
 function getLocation() {
     navigator.geolocation.getCurrentPosition(geoCallback, onLocationError);
@@ -66,19 +67,20 @@ function openCage() {
         document.getElementById('openCage').innerHTML = oc;
         getWeather(lat,lon);
         getRate(moneyIso)
-        saveLocate(city)
+        storeLocation(city,country);
     }
 }
 
-function saveLocateLocalSystem(value){
-    localStorage.setItem(LOCATION_KEY,value);
+function saveLocateLocalSystem(city, country){
+    localStorage.setItem(LOCATION_CITY_KEY,city); 
+    localStorage.setItem(LOCATION_COUNTRY_KEY,country); 
 }
 
-function getLocateLocalSystem(value){
-    return localStorage.getItem(LOCATION_KEY)
+function getLocateLocalSystem(key){
+    return localStorage.getItem(key)
 }
 
 function onSaveLocation() {
-    alert('Location save successfuly' +country);
+    alert('Location saved successfully');
     storeLocation(city,country);
 }

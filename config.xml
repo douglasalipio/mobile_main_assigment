@@ -18,24 +18,15 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="AIzaSyBIXW-oZow02S4CH7o_bWnEHZNuyT0JzkE" />
     <platform name="android">
-        <preference name="android-minSdkVersion" value="14" />
+        <preference name="android-minSdkVersion" value="19" />
         <allow-intent href="market:*" />
         <preference name="android.permisssion.ACCESS_FINE_LOCATION" value="none"/>
         <preference name="android.permisssion.ACCESS_COARSE_LOCATION" value="none"/>
-        <preference name="android.permisssion.INTERNET" value="none"/>
+        <preference name="android.permisssion.INTERNET" value="none"/> 
         <preference name="android.permission.WRITE_EXTERNAL_STORAGE" value="none"/>
         <preference name="AndroidPersistentFileLocation" value="Compatibility" />
     </platform>
-    <platform name="ios">
-        <allow-intent href="itms:*" />
-        <allow-intent href="itms-apps:*" />
-        <preference name="BackupWebStorage" value="none" />
-    </platform>
-    <preference name="DisallowOverscroll" value="true" />
-    <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
-    <plugin name="cordova-plugin-console" spec="~1.0.1" />
-    <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
-    <engine name="browser" spec="^5.0.4" />
 </widget>
  
