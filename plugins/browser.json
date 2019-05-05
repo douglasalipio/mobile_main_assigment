@@ -7,7 +7,22 @@
     "files": {}
   },
   "installed_plugins": {
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.cct.douglas"
+    },
     "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.cct.douglas"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.cct.douglas"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.cct.douglas"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.cct.douglas"
+    },
+    "cordova-plugin-googlemaps": {
       "PACKAGE_NAME": "com.cct.douglas"
     },
     "cordova-plugin-statusbar": {
@@ -16,22 +31,10 @@
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.cct.douglas"
     },
-    "cordova-plugin-geolocation": {
-      "PACKAGE_NAME": "com.cct.douglas"
-    },
-    "cordova-sqlite-storage": {
-      "PACKAGE_NAME": "com.cct.douglas"
-    },
     "cordova-plugin-x-toast": {
       "PACKAGE_NAME": "com.cct.douglas"
     },
-    "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "com.cct.douglas"
-    },
-    "cordova-plugin-googlemaps": {
-      "PACKAGE_NAME": "com.cct.douglas"
-    },
-    "cordova-plugin-camera": {
+    "cordova-sqlite-storage": {
       "PACKAGE_NAME": "com.cct.douglas"
     }
   },

@@ -38,7 +38,6 @@ function storeLocation(city, country){
 }
 
 function loadStoreLocation(){
-    console.log("hello location");
     db.transaction(function (tx) {
         var query = "SELECT * FROM Location";
         tx.executeSql(query, [], function (tx, resultSet) {

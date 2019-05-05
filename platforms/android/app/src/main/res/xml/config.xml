@@ -11,9 +11,6 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="SQLitePlugin">
-        <param name="android-package" value="io.sqlc.SQLitePlugin" />
-    </feature>
     <feature name="Toast">
         <param name="android-package" value="nl.xservices.plugins.Toast" />
     </feature>
@@ -67,6 +64,14 @@
     <feature name="Camera">
         <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
     </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <feature name="SQLitePlugin">
+        <param name="android-package" value="io.sqlc.SQLitePlugin" />
+    </feature>
     <name>main-assigment-douglas</name>
     <description>
         A basic Framework7 template for PhoneGap.
@@ -88,6 +93,7 @@
     <preference name="xwalkZOrderOnTop" value="true" />
     <preference name="BackgroundColor" value="0" />
     <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="AIzaSyBIXW-oZow02S4CH7o_bWnEHZNuyT0JzkE" />
+    <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="19" />
     <preference name="android.permisssion.ACCESS_FINE_LOCATION" value="none" />
     <preference name="android.permisssion.ACCESS_COARSE_LOCATION" value="none" />
