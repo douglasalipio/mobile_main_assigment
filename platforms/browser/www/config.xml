@@ -17,4 +17,5 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="AIzaSyBIXW-oZow02S4CH7o_bWnEHZNuyT0JzkE" />
+    <preference name="DisallowOverscroll" value="true" />
 </widget>
