@@ -97,3 +97,8 @@
   .aurora.theme-dark {
     --f7-tabbar-link-inactive-color: rgba(255, 255, 255, 0.5);
   }
+
+  #map {
+    height: 600px;
+    width: 100%;
+}

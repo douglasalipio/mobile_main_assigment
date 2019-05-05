@@ -16,6 +16,7 @@ function geoCallback(position) {
     lat = position.coords.latitude;
     lon = position.coords.longitude;
     openCage();
+    initMap(lat,lon);
 }
 
 var city = "";

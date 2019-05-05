@@ -7,7 +7,7 @@ function getPhoto(){
 function cameraCallback(imageData){
     var image = document.getElementById('myImage');
     image.src = imageData;
-    //image.scr = "data:image/jpeg;base64,"+ imageData;
+    //image.scr = "data:image/jpeg;base64,"+ imageData; 
     
 }
 

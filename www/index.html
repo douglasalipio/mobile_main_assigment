@@ -38,7 +38,7 @@
       <div class="navbar">
         <div class="navbar-inner">
           <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-          <div class="left sliding">iWeather</div>
+          <div class="left sliding">Traveller App</div>
         </div>
       </div>
       <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
@@ -57,18 +57,14 @@
 
               <a href="#tab-2" class="tab-link ">
                 <i class="icon material-icons md-24">location_off</i>
-                <span class="tabbar-label">Recencly</span>
+                <span class="tabbar-label">Recently</span>
               </a>
 
               <a href="#tab-3" class="tab-link ">
-                <i class="icon material-icons md-24">photo_camera</i>
-                <span class="tabbar-label">Camera</span>
+                <i class="icon material-icons md-24">map</i>
+                <span class="tabbar-label">Media</span>
               </a>
 
-              <a href="#tab-4" class="tab-link ">
-                <i class="icon material-icons md-24">photo_library</i>
-                <span class="tabbar-label">Gallery</span>
-              </a>
             </div>
           </div>
           <!-- Tabs -->
@@ -118,7 +114,7 @@
             </div>
             <div class="page-content tab" id="tab-2">
               <div class="block">
-                <div class="card-header">Recencly location</div>
+                <div class="card-header">History location</div>
                 <div class="block">
                   <div class="card card-outline">
                     <div class="card-header">Location</div>
@@ -129,34 +125,27 @@
             </div>
             <div class="page-content tab" id="tab-3">
               <div class="block">
-                  <div class="card-header">Getting Picture</div>
-                  <button id="buttonPic" onclick="getPhoto()" class="col button button-outline button-raised"> Picture
-                    </button>
-                    <img id="myImage" height="50%" width="50%"></img>
-              </div>
-            </div>
-            <div class="page-content tab" id="tab-4">
-              <div class="block">
-                  <div class="card-header">Gallery</div>
+                <div id="map">
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <script src="https://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
-    <script type="text/javascript" src="js/my-app.js"></script>
-    <script type="text/javascript" src="js/location.js"></script>
-    <script type="text/javascript" src="js/weather.js"></script>
-    <script type="text/javascript" src="js/rate.js"></script>
-    <script type="text/javascript" src="js/money.js"></script>
-    <script type="text/javascript" src="js/recently.js"></script>
-    <script type="text/javascript" src="js/toast.js"></script>
-    <script type="text/javascript" src="js/camera.js"></script>
+      <script src="https://js.api.here.com/v3/3.0/mapsjs-core.js" type="text/javascript" charset="utf-8"></script>
+      <script src="https://js.api.here.com/v3/3.0/mapsjs-service.js" type="text/javascript" charset="utf-8"></script>
+      <script type="text/javascript" src="cordova.js"></script>
+      <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+      <script type="text/javascript" src="js/my-app.js"></script>
+      <script type="text/javascript" src="js/location.js"></script>
+      <script type="text/javascript" src="js/weather.js"></script>
+      <script type="text/javascript" src="js/rate.js"></script>
+      <script type="text/javascript" src="js/money.js"></script>
+      <script type="text/javascript" src="js/recently.js"></script>
+      <script type="text/javascript" src="js/toast.js"></script>
+      <script type="text/javascript" src="js/camera.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIXW-oZow02S4CH7o_bWnEHZNuyT0JzkE&callback=initMap"></script>
 
 </body>
 

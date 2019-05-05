@@ -12,13 +12,16 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true
 });
 
+var today = new Date();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function () {
     console.log("Device is ready!");
     getLocation();
     createDatabase();
-    storeLocation();
     loadStoreLocation();   
+    getCurrentTime();
 });
 
 function gotFS(fileSystem) {
@@ -36,3 +39,35 @@ function getLocation() {
     navigator.geolocation.getCurrentPosition(geoCallback, onError);
 }
 
+function getCurrentTime(){
+    console.log("horario"+ time);
+    document.getElementById('getCurrentTime').innerHTML = "time";
+}
+
+function initMap(lat, lng) {
+
+    // Defining a position to display
+    var cct = {lat:lat, lng: lng};
+    
+    // Creating the map, centred on the position 
+    // defined above
+    var myMap = new google.maps.Map(document.getElementById('map'),
+        {zoom: 18,
+        center: cct });
+    
+    // Creating a marker to place on the map
+    // at the position defined above
+    var marker = new google.maps.Marker(
+        { position: cct,
+        map: myMap });
+    
+    // Adding another pointer
+    var otherLocation = {lat: lat, lng: -lng};
+    var marker2 = new google.maps.Marker(
+        { position: otherLocation,
+        map: myMap });
+
+    // REMEMBER: I added some style to the style file
+    // to be able to display the map!!!
+         
+} 
