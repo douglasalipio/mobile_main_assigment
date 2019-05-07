@@ -13,6 +13,11 @@
     "cordova-plugin-geolocation": {
       "PACKAGE_NAME": "com.cct.douglas"
     },
+    "cordova-plugin-googlemaps": {
+      "PLAY_SERVICES_VERSION": "15.0.1",
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "com.cct.douglas"
+    },
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "com.cct.douglas"
     },
@@ -20,11 +25,6 @@
       "PACKAGE_NAME": "com.cct.douglas"
     },
     "cordova-sqlite-storage": {
-      "PACKAGE_NAME": "com.cct.douglas"
-    },
-    "cordova-plugin-googlemaps": {
-      "PLAY_SERVICES_VERSION": "15.0.1",
-      "ANDROID_SUPPORT_V4_VERSION": "27.+",
       "PACKAGE_NAME": "com.cct.douglas"
     }
   },

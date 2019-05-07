@@ -19,6 +19,11 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <preference name="GOOGLE_MAPS_ANDROID_API_KEY" value="AIzaSyBIXW-oZow02S4CH7o_bWnEHZNuyT0JzkE" />
+    <plugin name="cordova-plugin-whitelist" spec="~1.2.0" />
+    <plugin name="cordova-plugin-console" spec="~1.0.1" />
+    <plugin name="cordova-plugin-statusbar" spec="~1.0.1" />
+    <plugin name="cordova-plugin-file" spec="~6.0.1" />
+    <plugin name="cordova-plugin-geolocation" version="2.1.0" />
     <platform name="android">
         <preference name="android-minSdkVersion" value="19" />
         <allow-intent href="market:*" />

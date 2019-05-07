@@ -13,8 +13,6 @@
       "cordova-plugin-statusbar": {},
       "cordova-plugin-geolocation": {},
       "cordova-sqlite-storage": {},
-      "File": {},
-      "FileTransfer": {},
       "cordova-plugin-googlemaps": {
         "PLAY_SERVICES_VERSION": "15.0.1",
         "ANDROID_SUPPORT_V4_VERSION": "27.+"
