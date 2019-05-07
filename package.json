@@ -15,27 +15,21 @@
       "cordova-sqlite-storage": {},
       "File": {},
       "FileTransfer": {},
-      "cordova-plugin-x-toast": {},
-      "cordova-plugin-dialogs": {},
       "cordova-plugin-googlemaps": {
         "PLAY_SERVICES_VERSION": "15.0.1",
         "ANDROID_SUPPORT_V4_VERSION": "27.+"
-      },
-      "cordova-plugin-camera": {}
+      }
     }
   },
   "dependencies": {
     "cordova": "^9.0.0",
     "cordova-android": "^8.0.0",
     "cordova-browser": "^5.0.4",
-    "cordova-plugin-camera": "^4.0.3",
     "cordova-plugin-console": "~1.0.1",
-    "cordova-plugin-dialogs": "^2.0.1",
     "cordova-plugin-geolocation": "^4.0.1",
     "cordova-plugin-googlemaps": "^2.6.2",
     "cordova-plugin-statusbar": "~1.0.1",
     "cordova-plugin-whitelist": "~1.2.0",
-    "cordova-plugin-x-toast": "^2.7.2",
     "cordova-sqlite-storage": "^3.2.0",
     "cordova-sqlite-storage-dependencies": "^2.0.0"
   },
